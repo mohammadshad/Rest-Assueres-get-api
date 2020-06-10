@@ -5,7 +5,7 @@
     <classes>
       <class name="restgetapi.getData">
         <methods>
-          <include name="weather_message_description_light_rain"/>
+          <include name="temp_description"/>
         </methods>
       </class> <!-- restgetapi.getData -->
     </classes>

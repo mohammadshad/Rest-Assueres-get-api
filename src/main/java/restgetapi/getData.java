@@ -2,6 +2,7 @@ package restgetapi;
 
 
 import java.awt.print.Book;
+import java.util.Arrays;
 import java.util.Map;
 
 import org.testng.Assert;
@@ -37,10 +38,13 @@ public class getData {
 	public void WeatherMessageBody()
 	{
 		ResponseBody responsebody = this.response.getBody();
-		List[] hours = this.response.jsonPath().getObject("list",List[].class );
+		List[] forecast = this.response.jsonPath().getObject("list",List[].class );
 	   String responsestring = responsebody.asString();
-		//System.out.print("length of array is" + hours.length);
-		if(hours.length/24 == 4) {
+	   List first = forecast[0];
+	   List last = forecast[forecast.length-1];
+	   int interval = last.dt- first.dt;
+	   
+		if(interval>=342000) {
 			
 			System.out.print("response contains 4 days of data");
 		}
@@ -80,6 +84,7 @@ public class getData {
 		for(List obj : interval)
 		{
 		   for(Weather weather: obj.getWeather()) {
+			  // System.out.println(weather.getMain());
 			   switch(weather.getId()) {
 			   case 500:
 				   Assert.assertEquals(weather.getDescription().toLowerCase(), "light rain");
@@ -108,26 +113,44 @@ public void weather_message_description_light_rain() {
 		} 	  
 		  
 	} 
+	
+	
+	//For all 4 days, the temp should not be less than temp_min and not more than temp_max
+	//Note there is a mapping  issue to find temp_min and temp_max.
+	
+	
 	@Test
 public void temp_description() {
 		
-		List[] interval = this.response.jsonPath().getObject("list",List[].class );
-		//System.out.print("status code is" + interval );
 		
+		List[] interval = this.response.jsonPath().getObject("list",List[].class );
+		
+		ResponseBody responsebody = this.response.getBody();
+		//List[] hours = this.response.jsonPath().getObject("list",List[].class );
+	   System.out.println(responsebody.asString());
 		for(List obj : interval)
 		{
-		   for(Weather weather: obj.getMain()) {
-			   switch(weather.getAdditionalProperties().g) {
-			   case 800:
-				   Assert.assertEquals(weather.getDescription().toLowerCase(), "clear sky");
-				   
-			   }
-		   }
-		} 	  
-		 
-	} 
-}
+			//System.out.println(obj.getDtTxt());
+			Main main=obj.getMain();
+			
+				/*
+				if(main.getTemp()<=main.getTempMin()) {
+					System.out.println(main.getTemp());	
+					
 	
+					
+				}
+			if(main.getTemp()>=main.getTempMax()) {
+				System.out.println(main.getTemp());
+			}*/
+			//			for(Main main:obj.getMain())
+//			System.out.println(main.getTemp());
+		}
+		 		} 	  
+		 
+	}
+
+
 	
 	
 	

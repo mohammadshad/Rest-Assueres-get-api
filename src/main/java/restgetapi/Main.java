@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class Main {
 
-    Double temp;
+    private Double temp;
     private Double tempMin;
     private Double tempMax;
     private Double pressure;
@@ -15,7 +15,6 @@ public class Main {
     private Integer humidity;
     private Integer tempKf;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
-	public String id;
 
     public Double getTemp() {
         return temp;
@@ -87,6 +86,12 @@ public class Main {
 
     public void setAdditionalProperty(String name, Object value) {
         this.additionalProperties.put(name, value);
+    }
+    
+    public String toString() {
+		return "" + this.temp + this.tempMax + this.tempMin+this.pressure;
+//    	return "";
+    	
     }
 
 }

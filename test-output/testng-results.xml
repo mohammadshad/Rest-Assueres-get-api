@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-10T11:09:38 IST" name="Default suite" finished-at="2020-06-10T11:09:38 IST" duration-ms="546">
+  <suite started-at="2020-06-10T16:55:37 IST" name="Default suite" finished-at="2020-06-10T16:55:37 IST" duration-ms="618">
     <groups>
     </groups>
-    <test started-at="2020-06-10T11:09:38 IST" name="Default test" finished-at="2020-06-10T11:09:38 IST" duration-ms="546">
+    <test started-at="2020-06-10T16:55:37 IST" name="Default test" finished-at="2020-06-10T16:55:37 IST" duration-ms="618">
       <class name="restgetapi.getData">
-        <test-method signature="WeatherMessageBody()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T11:09:38 IST" name="WeatherMessageBody" finished-at="2020-06-10T11:09:38 IST" duration-ms="272" status="PASS">
+        <test-method signature="WeatherMessageBody()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T16:55:37 IST" name="WeatherMessageBody" finished-at="2020-06-10T16:55:37 IST" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WeatherMessageBody -->
-        <test-method signature="is_forecast_hourly()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T11:09:38 IST" name="is_forecast_hourly" finished-at="2020-06-10T11:09:38 IST" duration-ms="40" status="PASS">
+        <test-method signature="is_forecast_hourly()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T16:55:37 IST" name="is_forecast_hourly" finished-at="2020-06-10T16:55:37 IST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- is_forecast_hourly -->
-        <test-method signature="temp_description()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T11:09:38 IST" name="temp_description" finished-at="2020-06-10T11:09:38 IST" duration-ms="84" status="PASS">
+        <test-method signature="temp_description()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T16:55:37 IST" name="temp_description" finished-at="2020-06-10T16:55:37 IST" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- temp_description -->
-        <test-method signature="testResponcecode()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T11:09:38 IST" name="testResponcecode" finished-at="2020-06-10T11:09:38 IST" duration-ms="0" status="PASS">
+        <test-method signature="testResponcecode()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T16:55:37 IST" name="testResponcecode" finished-at="2020-06-10T16:55:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponcecode -->
-        <test-method signature="weather_message_description()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T11:09:38 IST" name="weather_message_description" finished-at="2020-06-10T11:09:38 IST" duration-ms="40" status="PASS">
+        <test-method signature="weather_message_description()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T16:55:37 IST" name="weather_message_description" finished-at="2020-06-10T16:55:37 IST" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- weather_message_description -->
-        <test-method signature="weather_message_description_light_rain()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T11:09:38 IST" name="weather_message_description_light_rain" finished-at="2020-06-10T11:09:38 IST" duration-ms="35" status="PASS">
+        <test-method signature="weather_message_description_light_rain()[pri:0, instance:restgetapi.getData@6e1d4137]" started-at="2020-06-10T16:55:37 IST" name="weather_message_description_light_rain" finished-at="2020-06-10T16:55:37 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- weather_message_description_light_rain -->
