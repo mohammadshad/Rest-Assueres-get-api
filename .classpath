@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/commons-lang3-3.4.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/hamcrest-2.1.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/httpclient-4.5.3.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/httpmime-4.5.3.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/jakarta.activation-api-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/jakarta.xml.bind-api-2.3.2.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/jaxb-osgi-2.3.0.1.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/org.apache.sling.javax.activation-0.1.0.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Documents/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Downloads/rest-assured-3.0.2.jar"/>
+	<classpathentry kind="lib" path="/home/shad/Desktop/gson-2.8.5.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
