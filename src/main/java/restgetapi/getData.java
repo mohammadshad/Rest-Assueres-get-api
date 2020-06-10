@@ -1,9 +1,6 @@
 package restgetapi;
 
 
-import java.awt.print.Book;
-import java.util.Arrays;
-import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -11,7 +8,6 @@ import org.testng.annotations.Test;
 
 
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
